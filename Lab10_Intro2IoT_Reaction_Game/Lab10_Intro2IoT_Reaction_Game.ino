@@ -16,7 +16,7 @@ void setup() {
 
 void loop() {
   lcd.clear();                 // Clear the LCD screen
-  lcd.print("Press to Start"); // Display instruction to the player
+  lcd.print("Hello, World"); // Display instruction to the player
 
   // Wait here until the player presses the button
   // Assumes the button is wired to be HIGH when pressed
@@ -33,14 +33,14 @@ void loop() {
 
 void reactionGame() {
   lcd.clear();                 // Clear the LCD screen
-  lcd.print("Get Ready...");   // Inform the player to get ready
+  lcd.print("Hello, World");   // Inform the player to get ready
 
   // Generate a random delay between 3 to 6 seconds (3000-6000 ms)
   int randDelay = random(3000, 6000);
   delay(randDelay);            // Wait for the random period to make the start unpredictable
 
   lcd.clear();                 
-  lcd.print("Press NOW!");     // Prompt the player to press the button as fast as possible
+  lcd.print("Hello, World");     // Prompt the player to press the button as fast as possible
 
   unsigned long startTime = millis();  // Record the time right after showing "Press NOW!"
 
